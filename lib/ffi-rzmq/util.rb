@@ -13,7 +13,7 @@ module ZMQ
     # it succeeded.
     #
     def self.resultcode_ok? rc
-      rc >= 0
+      rc == true || rc >= 0
     end
 
     # Returns the +errno+ as set by the libzmq library.
